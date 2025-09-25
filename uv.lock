@@ -609,6 +609,7 @@ dependencies = [
     { name = "httpx" },
     { name = "httpx-sse" },
     { name = "jsonschema" },
+    { name = "openziti" },
     { name = "pydantic" },
     { name = "pydantic-settings" },
     { name = "python-multipart" },
@@ -656,6 +657,7 @@ requires-dist = [
     { name = "httpx", specifier = ">=0.27.1" },
     { name = "httpx-sse", specifier = ">=0.4" },
     { name = "jsonschema", specifier = ">=4.20.0" },
+    { name = "openziti", specifier = "==1.3.1" },
     { name = "pydantic", specifier = ">=2.11.0,<3.0.0" },
     { name = "pydantic-settings", specifier = ">=2.5.2" },
     { name = "python-dotenv", marker = "extra == 'cli'", specifier = ">=1.0.0" },
@@ -773,6 +775,7 @@ dependencies = [
     { name = "click" },
     { name = "httpx" },
     { name = "mcp" },
+    { name = "openziti" },
 ]
 
 [package.dev-dependencies]
@@ -788,6 +791,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.2.0" },
     { name = "httpx", specifier = ">=0.27" },
     { name = "mcp", editable = "." },
+    { name = "openziti", specifier = "==1.3.1" },
 ]
 
 [package.metadata.requires-dev]
@@ -1117,6 +1121,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/43/16/fc88b08840de0e0a7
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d2/1d/1b658dbd2b9fa9c4c9f32accbfc0205d532c8c6194dc0f2a4c0428e7128a/nodeenv-1.9.1-py2.py3-none-any.whl", hash = "sha256:ba11c9782d29c27c70ffbdda2d7415098754709be8a7056d79a737cd901155c9", size = 22314, upload-time = "2024-06-04T18:44:08.352Z" },
 ]
+
+[[package]]
+name = "openziti"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/5d/4e/a1ef6d1b617e2f9f58f704fcaeaeb234ec5493549974c3842eb898b80cf0/openziti-1.3.1.tar.gz", hash = "sha256:49f59663d9e15af4656911cc10675357885c030348911ec82918b4d576a9e09b", size = 37042, upload-time = "2025-08-22T15:53:08.378Z" }
 
 [[package]]
 name = "outcome"

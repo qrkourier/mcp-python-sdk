@@ -99,6 +99,12 @@ def main(port: int, transport: str) -> int:
 
         import uvicorn
 
+        import openziti
+        cfg = dict(
+            ztx="simple-mcp-host.json",
+            service="simple-mcp-prompt"
+        )
+        openziti.monkeypatch(bindings={("127.0.0.1", port): cfg})
         uvicorn.run(starlette_app, host="127.0.0.1", port=port)
     else:
         from mcp.server.stdio import stdio_server
